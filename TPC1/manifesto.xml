@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <metadata>
+        <titulo>TPC1 - José</titulo>
+        <data>22 de fevereiro de 2022</data>
+        <autor>Tiago Carvalho Freitas</autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </metadata>
+    <resumo>
+        Este trabalho consistia em desenvolver uma página web simples sobre um dos seguintes temas:
+            -> Jacaré
+            -> Japão
+            -> Jarro
+            -> José
+            -> Janela
+        O intuito deste primeiro trabalho é começar a desenvolver capacidades de desenvolvimento Web,
+        bem como explorar ferramentas como o HTML, CSS, JavaScript.
+    </resumo>
+    <ficheiros>
+        <html>
+            <nome>jose.html</home>
+        </html>
+        <css>
+            <nome>w3.css</home>
+        </css>
+    </ficheiros>
+</manifesto>
