@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC2 - File Server para páginas HTML</titulo>
+        <data>24 de fevereiro de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de um servidor  de ficheiros NodeJS.</p>
+        <p>O objetivo seria criar páginas HTML onde apresentássemos a informação presente no</p>
+            <xref>
+                <url>https://epl.di.uminho.pt/~jcr/AULAS/ATP2021/datasets/cinemaATP.json</url>
+                <texto> dataset</texto>
+            </xref> disponibilizado pelo docente.
+        </p>
+        <p>Foi utilizado um script em Python para gerar as diversas páginas HTML de forma automática</p>
+        <p>A página principal (index) permite escolher entre consultar filmes ou atores</p>
+        <p>A página de filmes permite consultar todos os filmes existentes no dataset</p>
+        <p>A a página de atores permite consultar todos os atores que participaram nos filmes presentes no dataset.</p>
+        <p>Cada registo de filme mostra o ano em que foi realizado, o género do filme e os atores que nele participaram.</p>
+        <p>No perfil de cada ator tem todos os filmes em que participou, sendo possível aceder ao registo dos mesmos através das páginas dos atores.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>file_server.js</url>
+            <texto>Servidor de ficheiros</texto>
+        </resultado>
+        <resultado>
+            <url>html_generator.py</url>
+            <texto>Interpretador do dataset e gerador das páginas HTML</texto>
+        </resultado>
+    </resultados>
+</doc>
