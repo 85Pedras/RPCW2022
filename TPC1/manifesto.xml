@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifesto>
-    <metadata>
+<doc>
+    <meta>
         <titulo>TPC1 - José</titulo>
         <data>22 de fevereiro de 2022</data>
-        <autor>Tiago Carvalho Freitas</autor>
-        <uc>Representação e Processamento de Conhecimento na Web</uc>
-    </metadata>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
     <resumo>
-        Este trabalho consistia em desenvolver uma página web simples sobre um dos seguintes temas:
-            -> Jacaré
-            -> Japão
-            -> Jarro
-            -> José
-            -> Janela
-        O intuito deste primeiro trabalho é começar a desenvolver capacidades de desenvolvimento Web,
-        bem como explorar ferramentas como o HTML, CSS, JavaScript.
+        <p>Este trabalho consistia em desenvolver uma página web simples sobre um dos seguintes temas:</p>
+        <ul>
+            <li>Jacaré</li>
+            <li>Japão</li>
+            <li>Jarro</li>
+            <li>José</li>
+            <li>Janela</li>
+        </ul>
+        <p>O intuito deste primeiro trabalho é começar a desenvolver capacidades de desenvolvimento Web,
+        bem como explorar ferramentas como o HTML, CSS, JavaScript.</p>
     </resumo>
-    <ficheiros>
-        <html>
-            <nome>jose.html</home>
-        </html>
-        <css>
-            <nome>w3.css</home>
-        </css>
-    </ficheiros>
-</manifesto>
+    <resultados>
+        <resultado>
+            <url>jose.html</url>
+            <texto>Página web</texto>
+        </resultado>
+    </resultados>
+</doc>

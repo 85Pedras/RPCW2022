@@ -1,0 +1,26 @@
+https://epl.di.uminho.pt/~jcr/AULAS/ATP2021/datasets/cinemaATP.json?fbclid=IwAR1n-ITVGPXNp2Zi0CjCkvh-_in59iBvy_ovp1rmPUkVew8WDxhjG1B-gtQ
+
+1)ler o json
+->gerar pagina html para cada registo
+
+criar servidor para servir as paginas
+
+
+2)localhost:7777/filmes/f1
+			     /f2
+			     /f3
+
+3)localhost:7777/filmes
+	->index.html
+	->lista de titulos por ordem alfabetica
+		->clicar no titulo salta para a pagina correspondente
+
+
+4)localhost:7777/atores
+		  /atores/a1
+
+
+exemplo pagina 28 days
+
+28 days
+<a href = "localhost:7777/filmes/f1> 28 days </a>
