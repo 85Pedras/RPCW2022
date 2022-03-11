@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC3 - File Server com REST API</titulo>
+        <data>11 de março de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de um servidor de ficheiros.</p>
+        <p>Pré-requisito: axios (npm install axios --save)</p>
+        <p>No entanto, desta vez o objetivo seria criar páginas HTML dinâmicas resultantes da recolha de informação de uma REST API, que corremos com json-server.</p>
+        <p>O dataset no qual a API corre foi fornecido pelo docente, está no formato json e é relativo a uma escola de música.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>file_server.js</url>
+            <texto>Ficheiro responsável pela criação do servidor de ficheiros e por fazer os pedidos à API assim como da criação das páginas HTML a partir destes</texto>
+        </resultado>
+        <resultado>
+            <url>db.json</url>
+            <texto>Dataset de uma escola de música sobre qual a API corre</texto>
+        </resultado>
+    </resultados>
+</doc>
