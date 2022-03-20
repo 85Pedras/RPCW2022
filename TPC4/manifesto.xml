@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC4 - Tarefas</titulo>
+        <data>20 de março de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de um servidor web.</p>
+        <p>No entanto, desta vez o objetivo seria, numa única página HTML, permitir utlizador criar e editar tarefas numa API, que corremos com json-server.</p>
+        <p>Os diversos pedidos à API (get, post, method, put, delete) e são feitos através de um formulário que permite ao utilizador criar ou editar uma tarefa e através de butões.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>server.js</url>
+            <texto>Ficheiro responsável pela criação do servidor, pela interpretação dos pedidos do utilizador, por fazer os pedidos à API e da criação da páginas HTML</texto>
+        </resultado>
+        <resultado>
+            <url>tarefas.json</url>
+            <texto>Dataset com as tarefas existentes sobre qual a API corre</texto>
+        </resultado>
+    </resultados>
+</doc>

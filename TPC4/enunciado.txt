@@ -1,0 +1,26 @@
+fazer todo list
+unica pagina html
+
+a fazer vs realizadas
+
+
+tarefa
+-> data da criaçao
+-> deadline
+-> quem
+-> o que
+-> tipo
+
+adicionar/editar/delete
+
+get / <- pagina principal
+
+get /tarefas?type=realizada
+get /tarefas?type=por_fazer
+
+formulario em cima
+
+registar -> POST -> /tarefas
+delete -> GET -> /tarefas/id/apagar (axios.DELETE)
+
+edit
