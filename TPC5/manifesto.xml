@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC5 - Músicas</titulo>
+        <data>26 de março de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de um servidor NodeJS com a utilização de uma API, que corremos com o json-server.</p>
+        <p>No entanto, desta vez tivemos o auxílio da framework Express que cria diretorias e ficheiros que apoiam num desenvolvimento.</p>
+        <p>O objetivo era criar uma página HTML, na qual estivessem listadas todas as músicas presentes no dataset, assim como gerar páginas para cada música e filtrar por província.</p>
+        <p>Para além disso, existe também um formulário a partir do qual podemos inserir novas músicas.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Serviço que responde aos pedidos do cliente e comunica com a API, bem como com os routers do Express.</texto>
+        </resultado>
+        <resultado>
+            <url>dataset_script.py</url>
+            <texto>Script que insere id's nas músicas e coloca o dataset no formato pretendido pelo json-server.</texto>
+        </resultado>
+        <resultado>
+            <url>arq-son-EVO-ready.json</url>
+            <texto>Dataset já alterado pelo script e pronto para ser utilizado pelo json-server.</texto>
+        </resultado>
+    </resultados>
+</doc>

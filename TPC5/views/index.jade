@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .w3-container.w3-margin-left
+    h3
+      b Introduzir música:
+  form.w3-container(w3-bottombar='' action='/musicas' method='POST')
+    .w3-row-padding
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Título' name='tit' required='')
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Músico' name='musico' required='')
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Província' name='prov' required='')
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Local' name='local' required='')
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Duração' name='duracao' required='')
+      .w3-col.m2.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Tipo de ficheiro' name='fileType' required='')
+    .w3-container.w3-margin-top
+      .w3-bar
+        input.w3-button.w3-round.w3-green.w3-hover-green(type='submit' value='Registar' onclick='submitForm()')
+
+        input.w3-button.w3-round.w3-red.w3-hover-red(type='reset' value='Limpar valores')
+  hr(style='height:10px;border-width:0;margin-bottom:0;color:black;background-color:black')
+  ul.w3-ul
+    li.w3-dark-grey
+      h2 Músicas
+  table.w3-table.w3-white.w3-hoverable
+    thead
+      tr
+        td.w3-center
+          h5
+            b ID
+        td.w3-center
+          h5
+            b Título
+        td.w3-center
+          h5
+            b Província
+    each m in musicas
+      tr
+        td.w3-center
+            a(href="/musicas/#{m.id}")= m.id 
+        td.w3-center
+            a(href="/musicas/#{m.id}")= m.tit
+        td.w3-center
+            a(href="/musicas/prov/#{m.prov_id}")= m.prov
+        td.w3-center
+            a.w3-button.w3-round.w3-padding-small.w3-red.w3-hover-red(href="/musicas/delete/#{m.id}") Eliminar

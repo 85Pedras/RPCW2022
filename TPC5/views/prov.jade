@@ -1,0 +1,31 @@
+extends layout 
+
+block content 
+    ul.w3-ul
+        li.w3-dark-grey
+            h2 #{musicas[0].prov}
+    table.w3-table.w3-white.w3-hoverable
+        thead
+          tr
+            td.w3-center
+              h5
+                b ID
+            td.w3-center
+              h5
+                b Título
+            td.w3-center
+              h5
+                b Músico
+            td.w3-center
+              h5
+                b Local
+        each m in musicas
+          tr
+            td.w3-center
+              a(href="/musicas/#{m.id}")= m.id 
+            td.w3-center
+              a(href="/musicas/#{m.id}")= m.tit
+            td.w3-center= m.musico
+            td.w3-center= m.local
+    button.w3-button.w3-black.w3-hover-black
+        a(href='/musicas') Voltar

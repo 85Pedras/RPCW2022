@@ -1,0 +1,7 @@
+dataset -> arq-son
+json-server
+´
+get / ou /musicas -> lista de musicas (id,tipo,provincia)
+get /musicas/id -> pagina da musica
+get /musicas/prov/id -> musicas desta provincia
+/musicas/inserir -> formulario -> post

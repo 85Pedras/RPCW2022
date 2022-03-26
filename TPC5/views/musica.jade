@@ -1,0 +1,24 @@
+extends layout 
+
+block content 
+    ul.w3-ul
+        li.w3-dark-grey
+            h2 #{musica.tit}
+    .w3-container
+      h4
+        b Província: 
+        a(href="/musicas/prov/#{musica.prov_id}")= musica.prov
+      h4
+        b Local:
+        |  #{musica.local}
+      h4
+        b Músico:
+        |  #{musica.musico}
+      h4
+        b Duração:
+        |  #{musica.duracao}
+      h4
+        b Tipo de ficheiro:
+        |  #{musica.fileType}
+      button.w3-button.w3-black.w3-hover-black
+        a(href='/musicas') Voltar
