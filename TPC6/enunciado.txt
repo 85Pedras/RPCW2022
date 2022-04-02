@@ -1,0 +1,9 @@
+views pug
+ficheiro json ou mongodb
+
+get / primeira parte: form -> file, descricao submit
+	lista de ficheiros(com delete)
+
+
+extra: download (ver imagem)
+	

@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .w3-container.w3-margin-left
+    h3
+      b Upload
+  form.w3-container(w3-bottombar='' action='/insert' method='POST' enctype='multipart/form-data')
+    .w3-row-padding
+      .w3-col.s4.w3-center
+        input.w3-input.w3-border.w3-border-black(type='file' name='my_file')
+      .w3-col.m3.w3-center
+        input.w3-input.w3-border.w3-border-black(type='text' placeholder='Descrição' name='description')
+      .w3-col.m1.w3-center
+        input.w3-button.w3-round.w3-green.w3-hover-green(type='submit' value='Upload')
+      .w3-col.m1.w3-center
+        input.w3-button.w3-round.w3-red.w3-hover-red(type='reset' value='Limpar')
+  hr(style='height:10px;border-width:0;margin-bottom:0;color:black;background-color:black')
+  ul.w3-ul
+    li.w3-dark-grey
+      h2 Ficheiros
+  table.w3-table.w3-white.w3-hoverable
+    thead
+      tr
+        td.w3-center
+          h5
+            b Nome
+        td.w3-center
+          h5
+            b Tipo
+        td.w3-center
+          h5
+            b Descrição
+        td.w3-center
+          h5
+            b Tamanho
+        td.w3-center
+          h5
+            b Data
+    each f in files
+      tr
+        td.w3-center
+          a(href="/images/"+f.name download target="_blank")= f.name
+        td.w3-center= f.mimetype
+        td.w3-center= f.description
+        td.w3-center= f.size 
+        td.w3-center= f.date
+        td.w3-center
+            a.w3-button.w3-round.w3-padding-small.w3-red.w3-hover-red(href="/delete/#{f._id}") Eliminar

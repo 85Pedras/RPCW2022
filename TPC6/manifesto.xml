@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC6 - Ficheiros</titulo>
+        <data>1 de abril de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de um servidor NodeJS com a utilização de uma base de dados do MongoDB.</p>
+        <p>Tivemos o auxílio da framework Express que cria diretorias e ficheiros que apoiam no desenvolvimento e para as views foi utilizado o pug.</p>
+        <p>O objetivo era criar uma página (porta escolhida: 4000), na qual fosse possível submeter (upload) ficheiros fornecendo-lhes uma descrição.</p>
+        <p>Para além disso, todos os ficheiros submetidos e contidos na base de dados estão listados, também, na página principal sendo possível removê-los e fazer download dos mesmos.</p>
+        <p>Ao listar os ficheiros é apresentado o seu nome, tipo, tamanho, descrição e data de submissão.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Aplicação web.</texto>
+        </resultado>
+        <resultado>
+            <url>controllers/file.js</url>
+            <texto>Controlador para a gestão da meta-informação</texto>
+        </resultado>
+        <resultado>
+            <url>models/file.js</url>
+            <texto>Modelo para a meta-informação dos ficheiros</texto>
+        </resultado>
+        <resultado>
+            <url>public/images/</url>
+            <texto>Diretoria que contém os ficheiros que vão sendo submetidos na página web.</texto>
+        </resultado>
+        <resultado>
+            <url>routes/index.js</url>
+            <texto>Rota principal</texto>
+        </resultado>
+        <resultado>
+            <url>views/index.pug</url>
+            <texto>View da página web</texto>
+        </resultado>
+        <resultado>
+            <url>uploads/</url>
+            <texto>Diretoria utilizada para armazenar temporariamente os uploads</texto>
+        </resultado>
+    </resultados>
+</doc>
