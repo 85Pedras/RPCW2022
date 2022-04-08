@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  ul.w3-ul
+    li.w3-dark-grey
+      span(style='text-transform:uppercase;')
+        h3= c.codigo + ": " + c.titulo
+  ul.w3-ul
+    li
+      h4
+        b Nível: 
+        | #{c.nivel}
+    li
+      h4
+        b Descrição: 
+        | #{c.descricao}
+    li
+      h4
+        b Status: 
+        | #{c.status}
+    if c.filhos.length > 0
+      li
+        h4
+          b Filhos:
+          ul.w3-ul
+            each f in c.filhos
+              li
+                span(style='text-transform:uppercase;')
+                  a(href="/"+f.codigo) #{f.codigo}: #{f.titulo}
+    if c.nivel == 3
+      li
+        h4
+          b Processos relacionados: 
+          ul.w3-ul
+            each pr in c.processosRelacionados
+              if pr.idRel === "eCruzadoCom" || pr.idRel === "eComplementarDe" || pr.idRel === "eSuplementoDe" || pr.idRel === "eSuplementoPara"
+                li
+                  span(style='text-transform:uppercase;')
+                    a(href="/"+pr.codigo) #{pr.codigo}: #{pr.titulo}
+
+    li
+      .w3-row
+        if c.pai.codigo == undefined
+        else
+          .w3-col.m1.w3-margin-right
+            button.w3-button.w3-black
+              a(href="/"+c.pai.codigo) Processo Pai
+        .w3-col.m1.w3-margin-center
+          button.w3-button.w3-black
+            a(href="/") Página principal

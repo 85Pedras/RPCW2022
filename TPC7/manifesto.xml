@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC7 - Navegador CLAV</titulo>
+        <data>8 de abril de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia na implementação de uma aplicação NodeJS que utilizasse a API CLAV e servisse como navegador.</p>
+        <p>Tivemos o auxílio da framework Express que cria diretorias e ficheiros que apoiam no desenvolvimento e para as views foi utilizado o pug.</p>
+        <p>Toda a informação retirada da API é resultante de GET's com o auxílio de uma chave fornecida.</p>
+        <p>O objetivo era criar uma página principal, na qual estivessem listadas todas as classes de nível 1 contendo links para as descendentes.</p>
+        <p>Para além disso, na página de cada classe é mostrada informações sobre essa, assim como uma lista com os links das classes descendentes.</p>
+        <p>No caso de ser uma classe nível 3 também é uma apresentada uma lista com os seus processos relacionados.</p>
+        <p>(Porta escolhida: 4000</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Aplicação web.</texto>
+        </resultado>
+        <resultado>
+            <url>routes/index.js</url>
+            <texto>Rota principal</texto>
+        </resultado>
+        <resultado>
+            <url>views/index.pug</url>
+            <texto>View da página principal</texto>
+        </resultado>
+        <resultado>
+            <url>views/class.pug</url>
+            <texto>View da página de uma classe</texto>
+        </resultado>
+        <resultado>
+            <url>api_key.txt</url>
+            <texto>Chave para aceder à API</texto>
+        </resultado>
+    </resultados>
+</doc>

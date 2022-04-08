@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  ul.w3-ul
+    li.w3-black
+      h2 Classes (nível 1)
+  ul.w3-ul.w3-hoverable
+    each c in classes
+      span(style='text-transform:uppercase;')
+        li
+          h4
+            a(href="/"+c.codigo)= c.codigo + ": " + c.titulo
+        
+    
