@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC8 - MyParagraph</titulo>
+        <data>26 de abril de 2022</data>
+        <autor>
+            <id>PG47687</id>
+            <nome>Tiago Carvalho Freitas</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>(Porta escolhida: 4000</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Aplicação web.</texto>
+        </resultado>
+        <resultado>
+            <url>para.js</url>
+            <texto>Script que responde às interações do cliente com a página HTML.</texto>
+        </resultado>
+            
+    </resultados>
+</doc>
