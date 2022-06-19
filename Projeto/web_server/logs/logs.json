@@ -1,0 +1,170 @@
+[
+    {
+        "_id": "62af6774f73f8444edd9331f",
+        "texto": "produtor fez logout com sucesso",
+        "data": "2022-06-19 19:14",
+        "__v": 0
+    },
+    {
+        "_id": "62af677af73f8444edd93321",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 19:14",
+        "__v": 0
+    },
+    {
+        "_id": "62af672ff73f8444edd9330a",
+        "texto": "produtor fez login com sucesso",
+        "data": "2022-06-19 19:13",
+        "__v": 0
+    },
+    {
+        "_id": "62af674bf73f8444edd93314",
+        "texto": "produtor fez o upload do recurso Testes2020 com sucesso",
+        "data": "2022-06-19 19:13",
+        "__v": 0
+    },
+    {
+        "_id": "62af6700f73f8444edd932ec",
+        "texto": "pedras85 submeteu um aviso com sucesso",
+        "data": "2022-06-19 19:12",
+        "__v": 0
+    },
+    {
+        "_id": "62af671df73f8444edd932fb",
+        "texto": "pedras85 eliminou um recurso (ID: 62a906d955837637ac3157ad) com sucesso",
+        "data": "2022-06-19 19:12",
+        "__v": 0
+    },
+    {
+        "_id": "62af6729f73f8444edd93308",
+        "texto": "pedras85 fez logout com sucesso",
+        "data": "2022-06-19 19:12",
+        "__v": 0
+    },
+    {
+        "_id": "62af66b4f73f8444edd932cf",
+        "texto": "pedras85 editou um utilizador (ID: 62a8fc3ff57af6dce7cb3b14) com sucesso",
+        "data": "2022-06-19 19:11",
+        "__v": 0
+    },
+    {
+        "_id": "62af66c5f73f8444edd932dc",
+        "texto": "pedras85 eliminou um aviso (ID: 62ad1a7311d80f92af117271) com sucesso",
+        "data": "2022-06-19 19:11",
+        "__v": 0
+    },
+    {
+        "_id": "62af669cf73f8444edd932c0",
+        "texto": "pedras85 editou um recurso (ID: 62a9034855837637ac315781) com sucesso",
+        "data": "2022-06-19 19:10",
+        "__v": 0
+    },
+    {
+        "_id": "62af49e0bee2866a201b19c6",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:08",
+        "__v": 0
+    },
+    {
+        "_id": "62af49e3bee2866a201b19ce",
+        "texto": "pedras85 fez logout com sucesso",
+        "data": "2022-06-19 17:08",
+        "__v": 0
+    },
+    {
+        "_id": "62af49e9bee2866a201b19d0",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:08",
+        "__v": 0
+    },
+    {
+        "_id": "62af497fbee2866a201b19bf",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:06",
+        "__v": 0
+    },
+    {
+        "_id": "62af4950bee2866a201b19b7",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:05",
+        "__v": 0
+    },
+    {
+        "_id": "62af48bcbee2866a201b19a1",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:03",
+        "__v": 0
+    },
+    {
+        "_id": "62af48bebee2866a201b19a9",
+        "texto": "undefined fez logout com sucesso",
+        "data": "2022-06-19 17:03",
+        "__v": 0
+    },
+    {
+        "_id": "62af48c3bee2866a201b19ab",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:03",
+        "__v": 0
+    },
+    {
+        "_id": "62af48d7bee2866a201b19b5",
+        "texto": "undefined fez logout com sucesso",
+        "data": "2022-06-19 17:03",
+        "__v": 0
+    },
+    {
+        "_id": "62af484fbee2866a201b199f",
+        "texto": "undefined fez logout com sucesso",
+        "data": "2022-06-19 17:01",
+        "__v": 0
+    },
+    {
+        "_id": "62af4829bee2866a201b1993",
+        "texto": "undefined fez logout com sucesso",
+        "data": "2022-06-19 17:00",
+        "__v": 0
+    },
+    {
+        "_id": "62af4833bee2866a201b1995",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 17:00",
+        "__v": 0
+    },
+    {
+        "_id": "62af4721bee2866a201b1986",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 16:56",
+        "__v": 0
+    },
+    {
+        "_id": "62af45babee2866a201b1969",
+        "texto": "produtor fez login com sucesso",
+        "data": "2022-06-19 16:50",
+        "__v": 0
+    },
+    {
+        "_id": "62af45c6bee2866a201b1971",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 16:50",
+        "__v": 0
+    },
+    {
+        "_id": "62af43f17648738d1e7975a5",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 16:42",
+        "__v": 0
+    },
+    {
+        "_id": "62af43957648738d1e797599",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 16:41",
+        "__v": 0
+    },
+    {
+        "_id": "62af435d7648738d1e79758d",
+        "texto": "pedras85 fez login com sucesso",
+        "data": "2022-06-19 16:40",
+        "__v": 0
+    }
+]

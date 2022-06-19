@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .w3-container.w3-margin-bottom.w3-black
+    h2 RRD - Registar
+  .w3-row.w3-col.s4
+    form.w3-container(action='/rrd/registar' method='POST')
+      label Username:
+      input.w3-input.w3-border(type="text" name="username" value=`${user}` required)
+      label Email:
+      input.w3-input.w3-border(type="text" name="email" value=`${email}` required)
+      label Password:
+      input.w3-input.w3-border(type="password" name="password" required)
+      label Nível de utilizador:
+      select.w3-select.w3-border(name='level' required)
+        if level == "Administrador"
+          option(value='Administrador' selected) Administrador
+          option(value='Produtor') Produtor
+          option(value='Consumidor') Consumidor
+        else if level == "Produtor"
+          option(value='Administrador') Administrador
+          option(value='Produtor' selected) Produtor
+          option(value='Consumidor') Consumidor
+        else if level == "Consumidor"
+          option(value='Administrador') Administrador
+          option(value='Produtor') Produtor
+          option(value='Consumidor' selected) Consumidor
+        else
+          option(value="" selected disabled)
+          option(value='Administrador') Administrador
+          option(value='Produtor') Produtor
+          option(value='Consumidor') Consumidor
+      input.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-green.w3-hover-green(type="submit" value="Registar")
+      input.w3-button.w3-round.w3-margin-top.w3-red.w3-hover-red(type='reset' value='Limpar')
+      if error
+          p(style='color:red;')= error

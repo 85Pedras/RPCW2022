@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .w3-container
+    h1= error
+    if erros 
+      each e in erros
+        h2= e
+    p
+      a(href="/rrd") Voltar à página inicial

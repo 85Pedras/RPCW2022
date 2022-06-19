@@ -1,0 +1,62 @@
+extends layout 
+
+block content
+
+  .w3-bar.w3-black.w3-border.w3-border.white.w3-large
+    .w3-margin-left
+      a.w3-bar-item.w3-button(href="/rrd") Página Inicial
+      a.w3-bar-item.w3-button(href="/rrd/recursos") Recursos
+      .w3-dropdown-hover
+        button.w3-button Tipos de Recursos
+        .w3-dropdown-content.w3-bar-block.w3-card-4
+          each t in tipos
+            a.w3-bar-item.w3-button(href="/rrd?tipo=" + t)= t
+      form(action='/rrd/search' method='POST')
+        input.w3-input.w3-bar-item.w3-black.w3-border-right.w3-border-left.w3-border-white(size='13' type='text' placeholder='Pesquisar recurso' name='search')
+        button.w3-bar-item.w3-button(type='submit')
+          i.fa.fa-search
+      a.w3-bar-item.w3-button(href="/rrd/avisos") Avisos
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/users") Utilizadores
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/logs") Logs
+      a.w3-bar-item.w3-button(href="/rrd/perfil") Meu perfil
+      a.w3-bar-item.w3-button(href="/rrd/logout") Logout
+            
+  .w3-container.w3-margin-left
+    if users.length == 0
+      h4 Não existem outros utilizadores no sistema
+    else
+      h2
+        b Utilizadores
+      table.w3-table.w3-white.w3-hoverable
+        thead
+          tr
+            td.w3-center
+              h5
+                b Username
+            td.w3-center
+              h5
+                b Email
+            td.w3-center
+              h5
+                b Password
+            td.w3-center
+              h5
+                b Nível
+            td.w3-center
+              h5
+                b Data de registo
+        each u in users
+          tr
+            td.w3-center= u.username
+            td.w3-center= u.email
+            td.w3-center= u.password
+            td.w3-center= u.level
+            td.w3-center= u.data_registo
+            td.w3-center
+                a.w3-button.w3-round.w3-padding-small.w3-blue.w3-hover-blue(href="/rrd/users/" + u._id) Detalhes
+            td.w3-center
+                a.w3-button.w3-round.w3-padding-small.w3-yellow.w3-hover-yellow(href="/rrd/users/editar/" + u._id) Editar
+            td.w3-center
+                a.w3-button.w3-round.w3-padding-small.w3-red.w3-hover-red(href="/rrd/users/delete/" + u._id) Eliminar

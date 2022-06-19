@@ -1,0 +1,53 @@
+extends layout 
+
+block content
+  .w3-bar.w3-black.w3-border.w3-border.white.w3-large
+    .w3-margin-left
+      a.w3-bar-item.w3-button(href="/rrd") Página Inicial
+      a.w3-bar-item.w3-button(href="/rrd/recursos") Recursos
+      .w3-dropdown-hover
+        button.w3-button Tipos de Recursos
+        .w3-dropdown-content.w3-bar-block.w3-card-4
+          each t in tipos
+            a.w3-bar-item.w3-button(href="/rrd?tipo=" + t)= t
+      form(action='/rrd/search' method='POST')
+        input.w3-input.w3-bar-item.w3-black.w3-border-right.w3-border-left.w3-border-white(size='13' type='text' placeholder='Pesquisar recurso' name='search')
+        button.w3-bar-item.w3-button(type='submit')
+          i.fa.fa-search
+      a.w3-bar-item.w3-button(href="/rrd/avisos") Avisos
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/users") Utilizadores
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/logs") Logs
+      a.w3-bar-item.w3-button(href="/rrd/perfil") Meu perfil
+      a.w3-bar-item.w3-button(href="/rrd/logout") Logout
+
+  .w3-container.w3-margin-left
+    h2
+      b Utilizador
+    .w3-ul
+      li 
+        b Username: 
+        | #{user.username}
+      li 
+        b Email: 
+        | #{user.email}
+      li 
+        b Password: 
+        | #{user.password}
+      li 
+        b Nível: 
+        | #{user.level}
+      li 
+        b Data de registo: 
+        | #{user.data_registo}
+      if files.length > 0
+        li 
+          b Recursos publicados:     
+          ul
+            each f in files
+              li 
+                a(href="/rrd/recursos/" + f._id)= f.titulo
+      li
+        a.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-margin-bottom.w3-yellow.w3-hover-yellow(href="/rrd/users/editar/" + user._id) Editar
+        a.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-margin-bottom.w3-red.w3-hover-red(href="/rrd/users/delete/" + user._id) Eliminar

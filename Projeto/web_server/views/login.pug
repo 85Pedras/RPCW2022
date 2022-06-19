@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .w3-container.w3-margin-bottom.w3-black
+    h2 RRD - Login
+  .w3-row.w3-col.s4
+    form.w3-container(action='/rrd/login' method='POST')
+      label Username:
+      input.w3-input.w3-border(type="text" name="username" value=`${user}` required)
+      label Password:
+      input.w3-input.w3-border(type="password" name="password" required)
+      input.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-green.w3-hover-green(type="submit" value="Iniciar sessão")
+      input.w3-button.w3-round.w3-margin-top.w3-red.w3-hover-red(type='reset' value='Limpar')
+      if error
+          p(style='color:red;')= error
+      p
+        a(href="/rrd/registar") Registar

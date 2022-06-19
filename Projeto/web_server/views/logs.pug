@@ -1,0 +1,37 @@
+extends layout 
+
+block content
+
+  .w3-bar.w3-black.w3-border.w3-border.white.w3-large
+    .w3-margin-left
+      a.w3-bar-item.w3-button(href="/rrd") Página Inicial
+      a.w3-bar-item.w3-button(href="/rrd/recursos") Recursos
+      .w3-dropdown-hover
+        button.w3-button Tipos de Recursos
+        .w3-dropdown-content.w3-bar-block.w3-card-4
+          each t in tipos
+            a.w3-bar-item.w3-button(href="/rrd?tipo=" + t)= t
+      form(action='/rrd/search' method='POST')
+        input.w3-input.w3-bar-item.w3-black.w3-border-right.w3-border-left.w3-border-white(size='13' type='text' placeholder='Pesquisar recurso' name='search')
+        button.w3-bar-item.w3-button(type='submit')
+          i.fa.fa-search
+      a.w3-bar-item.w3-button(href="/rrd/avisos") Avisos
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/users") Utilizadores
+      if level == "Administrador"
+        a.w3-bar-item.w3-button(href="/rrd/logs") Logs
+      a.w3-bar-item.w3-button(href="/rrd/perfil") Meu perfil
+      a.w3-bar-item.w3-button(href="/rrd/logout") Logout
+            
+  .w3-container.w3-margin-left
+    h2
+      b Logs
+    if logs.length == 0
+      h4 Não existem logs no momento
+    else
+      ul(style={display: "flex", "flex-direction": "column-reverse", overflow: 'auto', height: '550px', padding: '0', border: "3px solid #000", "list-style-type": 'none'})
+        each l in logs
+          li(style={padding: "5px 15px", "border-bottom": "1px solid #000"}) #{l.data}: #{l.texto} 
+      .w3-li
+        a.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-margin-bottom.w3-green.w3-hover-green(href="/rrd/logs/download") Download
+        a.w3-button.w3-round.w3-margin-top.w3-margin-right.w3-margin-bottom.w3-red.w3-hover-red(href="/rrd/logs/reset") Reset  
